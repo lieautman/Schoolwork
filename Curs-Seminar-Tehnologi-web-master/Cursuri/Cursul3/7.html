@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            console.log('start')
+            function f0(callback){
+                let n
+                setTimeout(()=>{
+                    n=100
+                    callback(n)
+                },1000)
+                //return n
+            }
+            function resultHandler(n){
+                console.log(n)
+            }
+            //greu de debaguit
+            f0(resultHandler)
+        </script>
+    </head>
+</html>

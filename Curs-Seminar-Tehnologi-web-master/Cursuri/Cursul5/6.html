@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div span{
+            background-color: lawngreen;
+        }
+        div>span{
+            background-color: lightcoral;
+        }
+        /*sunt la fel de specifici cei de mai sus*/
+        /* div p{
+            background-color: cadetblue;
+        } */
+        img~div{
+            background-color: orange;
+        }
+        img+div{
+            background-color: orchid;
+        }
+        /*dupa imagine si imediat dupa imagine*/
+    </style>
+</head>
+<body>
+    <div><span>some span</span></div>
+    <div><p><span>some other span</span></p></div>
+    <img src="" alt="">
+    <div>somediv</div>
+    <span>somespan</span>
+    <div>someotherdiv</div>
+</body>
+</html>

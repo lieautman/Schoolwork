@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+             window.onload = ()=>{
+                const paragraph = document.getElementById("myParagraph")
+                const myEvent = new Event("myEvt")
+
+                const doSomething=()=>{
+                    document.dispatchEvent(myEvent)
+                    console.log('I am too lazy!')
+                }
+                paragraph.addEventListener('click',doSomething)
+
+                const doSomethingelse=()=>{
+                    console.log('Not too lazy!')
+                }
+                document.addEventListener('myEvt',doSomethingelse)
+
+
+                
+            }
+        </script>
+    </head>
+    <body>
+        <p id="myParagraph">LMAO -> Click me!</button>
+    </body>
+</html>

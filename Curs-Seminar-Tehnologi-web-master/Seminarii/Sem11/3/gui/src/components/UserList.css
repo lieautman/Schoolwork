@@ -1,0 +1,25 @@
+.user-view{
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+
+}
+.user-list {
+  padding:0;
+  margin:0;
+  grid-area:1;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+.user-details{
+  padding:0;
+  margin:0;
+  grid-area:1;
+  height:60vh;
+  width:20vw;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}

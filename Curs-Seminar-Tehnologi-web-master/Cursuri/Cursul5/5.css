@@ -1,0 +1,16 @@
+/*specificitate 0-0-0-1*/
+div{
+    background-color: green;
+}
+/*specificitate 0-0-1-0*/
+.alfa{
+    background-color: lightblue;
+}
+/*specificitate 0-1-0-0*/
+#beta{
+    background-color: tomato;
+}
+/*specificitate 1-0-0-0 in style din html*/
+/*specificitate 0-0-0-0 in tag steluta*/
+
+

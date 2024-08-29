@@ -1,0 +1,8 @@
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\bin\Debug\User Library.dll
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\bin\Debug\User Library.pdb
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\obj\Debug\User_Library.BackButton.resources
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\obj\Debug\User Library.csproj.GenerateResource.cache
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\obj\Debug\User Library.csproj.CoreCompileInputs.cache
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\obj\Debug\User Library.dll
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\obj\Debug\User Library.pdb
+C:\Users\dumi_\Folder\Faculty related\Anul2\Sem2\Programadarea aplicatiilor windows\Proiect\Proiect-anul2-sem2-programarea_aplicatiilor_windows\User Library\obj\Debug\User Library.csprojAssemblyReference.cache

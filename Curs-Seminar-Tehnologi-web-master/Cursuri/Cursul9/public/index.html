@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <title>Document</title>
+    <script type="text/javascript">
+
+        const SERVER = 'http://localhost:8080';
+
+        const bookView = Handlebars.compile(`
+            <h1>List of books</h1>
+            <table>
+                {{#each model}}
+                <tr>
+                    <td>{{this.title}}</td>
+                    <td>{{this.content}}</td>
+                </tr>
+                {{/each}}
+            </table>
+            <input type=button value=add id=addButton />
+        `)
+
+        const addBookView = Handlebars.compile(`
+            <h1>Add a book</h1>
+        `);
+
+
+        const loadAll = async () =>{
+            const response = await fetch(`${SERVER}/books`);
+            if(!response.ok){
+                throw response;
+            }
+            const data = await response.json()
+            console.warn(data)
+            return data;
+
+        }
+
+        const render = (view,model)=>{
+            const ui = document.querySelector('#ui');
+            
+            const rendered = view({model})
+
+            
+            ui.innerHTML = rendered;
+            return ui;
+        }
+
+        window.onload = async ()=>{
+            const data = await loadAll();
+
+
+            render(bookView,data);
+
+            
+        }
+        window.onhashchange = ()=>{
+            console.warn('hash changed');
+        }
+
+
+
+
+
+        const handleView = async()=>{
+            const viewDefinition = getView(window.location.hash);
+
+            if(viewDefinition.onEnter){
+                await viewDefinition.onEnter()
+            }
+        }
+
+        window.onload = handleView
+        window.onhashchange = handleView
+
+
+        const getView = (hash)=>{
+            const mappings = {
+                '^$':{
+                    view:bookView,
+                    onEnter:async()=>{
+                        data=await loadAll();
+                    },
+                    onRender:(ui)=>{
+                        ui.querySelector('#addButton').onClick=()=>{
+                            window.location = `${SERVER}/#/add-book`;
+                        }
+                    }
+                },
+                '#/books$':{
+                    view:bookView,
+                    onEnter:async()=>{
+                        data=await loadAll()
+                        render(bookView,data);
+                    },
+                    onRender:(ui)=>{
+                        ui.querySelector('#addButton').onClick=()=>{
+                            window.location = `${SERVER}/#/add-book`;
+                        }
+                    }
+                },
+                '#/add-book$':{
+                    view:addBookView,
+                    name:'add',
+                    onRender:(ui)=>{
+                        ui.querySelector('#addButton').onClick = async()=>{
+                            const response = await fetch('${SERVER}/books',{
+                                methon:'POST',
+                                headers:{
+                                    'Content-Type':'application/json'
+                                },
+                                body:JSON.stringify({
+                                    title:'ceva1',
+                                    content:'altceva1'
+                                })
+                            });
+                        }
+
+                    }
+                }
+            }
+
+            for(const mapping in mappings){
+                const mappingRegex = new RegExp(mapping);
+
+                
+                if(hash.match(mappingRegex)){
+                    return mappings[mapping];
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="ui"></div>
+</body>
+</html>

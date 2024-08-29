@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            console.log('start')
+            function f0(callback){
+                let n
+                setTimeout(()=>{
+                    n=100
+                    
+                    let e = new Event('task_complete')
+                    e.result=n
+                    window.dispatchEvent(e)
+                },1000)
+                //return n
+            }
+            f0()
+            window.addEventListener('task_complete',(evt)=>{
+                console.log(evt.result)
+            })
+
+            //exista un design pattern cu future values
+            //aceste valori au 3 stari : pending, full-field, rejected
+        </script>
+    </head>
+</html>

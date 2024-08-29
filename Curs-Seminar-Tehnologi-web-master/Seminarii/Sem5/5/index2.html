@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            window.onload=()=>{
+                var form = document.getElementById("form")
+                
+                var formSubmitHandler=(e)=>{
+                    e.preventDefault();
+                    var table = document.getElementById("table")
+                    var nume = document.getElementById("nume").value
+                    var telefon = document.getElementById("telefon").value
+
+                    var rand = document.createElement("tr")
+
+                    var coloanaNume = document.createElement("td")
+                    var coloanaTelefon = document.createElement("td")
+
+                    coloanaNume.innerHTML = nume
+                    coloanaTelefon.innerHTML=telefon
+
+
+                    rand.appendChild(coloanaNume)
+                    rand.appendChild(coloanaTelefon)
+
+                    table.appendChild(rand)
+                }
+            
+                form.onsubmit= formSubmitHandler
+            }
+        </script>
+    </head>
+    <body>
+        <table id="table">
+        </table>
+        <form id="form">
+            <input type="text" id="nume" />
+            <input type="text" id="telefon" />
+
+            <button type="submit" id="submitBtn">Add</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  padding: 30px;
+  left: 50%;
+  width: 100%;
+  height: 10vh;
+}
+h2 {
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  left: 50%;
+  margin-bottom: 20px;
+}
+
+#loginForm {
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  padding: 10px;
+  width: 50vw;
+  height: 63vh;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  font-family: inherit;
+  margin-bottom: 27vh;
+}
+
+#labelPassword,
+#labelUsername {
+  margin-top: 35px;
+  padding: 5px;
+  display: block;
+  margin-left: 46.5%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-family: inherit;
+}
+
+#labelAccount {
+  width: 100%;
+  display: block;
+  font-size: small;
+  color: rgb(58, 56, 56);
+  font-family: inherit;
+  margin-bottom: 4px;
+  margin-left: 50%;
+  transform: translateX(-8%);
+  margin-bottom: 15px;
+}
+
+.credentials {
+  margin-left: 50%;
+  margin-top: 5px;
+  padding: 10px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  width: 60%;
+  border: none;
+  font-family: inherit;
+}
+
+.button {
+  display: block;
+  width: 60%;
+  margin-bottom: 80px;
+  padding: 0.7rem 2.5rem;
+  margin-left: 50%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  transform: translateX(-50%);
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+#btnLogin {
+  margin-top: 30px;
+}
+
+#btnLogin:hover {
+  background-color: #266867;
+  color: #f9f9f9;
+}
+
+#btnSignUp:hover {
+  background-color: #266867;
+  color: #f9f9f9;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(to top left, #266867 0%, #f9f9f9 100%);
+  justify-content: center;
+  height: 130vh;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}

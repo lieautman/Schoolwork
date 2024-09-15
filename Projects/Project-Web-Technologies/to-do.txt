@@ -1,0 +1,23 @@
+MP = membru proiect
+TST = tester
+
+----------------------------------------
+--> To-Do list functionalitati (minime):
+- sistem de login
+- sistem de gestionare proiecte(specificand un repo personal)
+- tipuri cont in relatie cu un proiect: TST/MP
+- optiune semnalare bug (prin completare a 4 campuri: severitate, prioritate de rezolvare, descriere)
+- MP pot vizualiza o lista cu bug-urile proiectului si pot rezolva acestea cu un link la commit-ul ce rezolva bug-ul
+- relatie 1 la 1 intre MP ce rezolva un bug si bug-ul, la un moment dat
+----------------------------------------
+
+----------------------------------------
+-->To-Do list functionalitati (nice to have):
+- securitate prin token
+- tipurile diferite de conturi au permisiuni specifice
+- un sistem de chat
+- buton "it works/it doesn't work"
+- adaugare filtre pentru lista de bug-uri si proiecte
+- timp estimat de rezolvare pentru bug-uri(in momentul alocarii unui bug de catre MP)
+- actualizare status bug de catre MP prin furnizare de link catre commit-ul ce il rezolva
+----------------------------------------

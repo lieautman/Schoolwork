@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "a4e0c59c-5ff1-4ce7-acda-7c67386cc4af",
+		"name": "Proiect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post user signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":4,\n    \"firstName\":\"adi1\",\n    \"lastName\":\"adita\",\n    \"type\":\"TST\",\n    \"email\":\"adi@yahoo.com\",\n    \"username\":\"adi4\",\n    \"passwordHash\":123\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"adi4\",\n    \"passwordHash\":123\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post bug create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"severity\":1,\n    \"priority\":\"mica\",\n    \"description\":\"O problema cu serverele\",\n    \"link\":\"ceva\",\n    \"usernameOfIssuer\":\"adi4\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/bug/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bug",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get bug all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bug/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bug",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post project create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"linkRepo\":\"ceva\"\n}"
+				},
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get project all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

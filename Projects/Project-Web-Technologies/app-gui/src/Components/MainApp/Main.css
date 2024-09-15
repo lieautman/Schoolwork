@@ -1,0 +1,19 @@
+#btnLogOut {
+  position: absolute;
+  width: 200px;
+  margin-top: 10px;
+  padding: 0.7rem 2.5rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.767);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+#btnLogOut:hover {
+  background-color: #266867;
+  color: #f9f9f9;
+}

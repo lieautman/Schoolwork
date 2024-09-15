@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Nunito', sans-serif;
+}
+
+.btnTST {
+  width: 60%;
+  padding: 0.7rem 2.5rem;
+  margin-left: 50%;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btnTST:hover {
+  background-color: #266867;
+  color: #f9f9f9;
+}
+
+#proiectTST {
+  border-radius: 9px;
+  padding: 20px;
+  width: 50rem;
+  height: 44.3vh;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.inputAdauga {
+  margin-left: 50%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  padding: 10px;
+}
+
+.inputUpdate {
+  margin-left: 50%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  padding: 10px;
+}
+
+#btnUpdateBug,
+#btnAdaugaBug,
+#btnEditeaza,
+#btnSterge {
+  width: 60%;
+  padding: 0.7rem 2.5rem;
+  margin-left: 50%;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+#btnUpdateBug:hover,
+#btnAdaugaBug:hover,
+#btnEditeaza:hover,
+#btnSterge:hover {
+  background-color: #266867;
+  color: #f9f9f9;
+}
+
+#formAdauga,
+#listaBugProiect {
+  border-radius: 9px;
+  padding: 20px;
+  width: 50rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+#proprietatiBug,
+#editeazaBugForm,
+#listaBugsPersonale {
+  border-radius: 9px;
+  padding: 20px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  font-family: inherit;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#bugPersonal {
+  border-radius: 9px;
+  padding: 20px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  font-family: inherit;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#listaproiecteHeader {
+  margin-top: 50px;
+}
